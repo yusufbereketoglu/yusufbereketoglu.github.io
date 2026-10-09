@@ -26,8 +26,17 @@ body {
   border-bottom: 4px solid #7a0819;
 }
 
+.logo {
+  display: block;
+  margin: 0 auto 12px;
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+}
+
 .header h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   line-height: 1.2;
 }
