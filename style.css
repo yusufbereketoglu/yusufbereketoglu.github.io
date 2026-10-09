@@ -314,30 +314,14 @@ a:hover {
   border-top: 3px solid #c8102e;
 }
 
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.5rem;
-  }
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-  .cat-card {
-    flex: 0 0 240px;
-  }
-  .order-section {
-    padding: 20px 14px;
-  }
-}
-
 /* Contact Icons */
 .contact-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 24px;
-  padding: 10px 0;
+  gap: 20px 28px;
+  margin: 8px 0 28px;
+  padding: 12px 8px;
 }
 
 .icon-btn {
@@ -345,26 +329,28 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 72px;
-  height: 72px;
+  width: 78px;
+  height: 78px;
   border-radius: 50%;
   text-decoration: none;
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 .icon-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.22);
   text-decoration: none;
   color: #fff;
 }
 
 .icon-btn svg {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  flex-shrink: 0;
 }
 
 .icon-maps {
@@ -393,13 +379,15 @@ a:hover {
 }
 
 .contact-details {
-  margin-top: 8px;
+  margin-top: 4px;
+  line-height: 1.55;
 }
 
 .contact-details dt {
   font-weight: 700;
-  margin-top: 12px;
+  margin-top: 14px;
   color: #c8102e;
+  font-size: 0.95rem;
 }
 
 .contact-details dt:first-child {
@@ -408,5 +396,44 @@ a:hover {
 
 .contact-details dd {
   margin-left: 0;
-  margin-top: 2px;
+  margin-top: 3px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Mobile improvements */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.45rem;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .cat-card {
+    flex: 0 0 240px;
+  }
+  .order-section {
+    padding: 20px 14px;
+  }
+  .contact-icons {
+    gap: 18px 22px;
+    padding: 8px 4px;
+  }
+  .icon-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 0.68rem;
+  }
+  .icon-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+  section {
+    padding: 18px 14px;
+  }
+  .contact-details dt,
+  .contact-details dd {
+    font-size: 0.92rem;
+  }
 }
