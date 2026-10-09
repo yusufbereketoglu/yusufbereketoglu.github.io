@@ -21,18 +21,26 @@ body {
 .header {
   background: linear-gradient(135deg, #c8102e 0%, #9a0a22 100%);
   color: #fff;
-  padding: 36px 0;
+  padding: 32px 0;
   text-align: center;
   border-bottom: 4px solid #7a0819;
 }
 
-.logo {
-  display: block;
+.logo-circle {
+  width: 80px;
+  height: 80px;
   margin: 0 auto 12px;
-  width: 120px;
-  height: auto;
+  background: #fff;
+  color: #c8102e;
   border-radius: 50%;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+  border: 3px solid #ffd700;
 }
 
 .header h1 {
@@ -47,7 +55,7 @@ body {
   font-size: 1rem;
 }
 
-/* Order Section */
+/* Order */
 .order-section {
   background: #fff;
   border: 2px solid #c8102e;
@@ -103,7 +111,7 @@ body {
   color: #fff;
 }
 
-/* Sections common */
+/* Sections */
 main {
   padding-bottom: 32px;
 }
@@ -186,15 +194,15 @@ h2 {
 .carousel {
   overflow: hidden;
   width: 100%;
-  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
 }
 
 .carousel-track {
   display: flex;
   gap: 16px;
   width: max-content;
-  animation: slide 35s linear infinite;
+  animation: slide 40s linear infinite;
 }
 
 .carousel-track:hover {
@@ -207,27 +215,26 @@ h2 {
 }
 
 .cat-card {
-  flex: 0 0 260px;
-  background: #fff;
-  border: 1px solid #f0c0c0;
-  border-radius: 10px;
-  padding: 18px 16px;
-  box-shadow: 0 2px 8px rgba(200, 16, 46, 0.08);
+  flex: 0 0 270px;
+  border-radius: 12px;
+  padding: 20px 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  border: 1px solid transparent;
 }
 
-.cat-icon {
-  font-size: 2.2rem;
+.cat-visual {
+  font-size: 2.4rem;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
 }
 
 .cat-card h3 {
   font-size: 1.05rem;
-  color: #c8102e;
   text-align: center;
   margin-bottom: 12px;
-  border-bottom: 1px solid #f0d0d0;
   padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .cat-card ul {
@@ -236,14 +243,45 @@ h2 {
 }
 
 .cat-card li {
-  padding: 4px 0;
-  border-bottom: 1px dotted #eee;
-  color: #444;
+  padding: 5px 0;
+  border-bottom: 1px dotted rgba(0,0,0,0.08);
+  color: #333;
 }
 
 .cat-card li:last-child {
   border-bottom: none;
 }
+
+/* Category colors */
+.cat-taze {
+  background: linear-gradient(160deg, #e8f5e9, #fff);
+  border-color: #a5d6a7;
+}
+.cat-taze h3 { color: #2e7d32; }
+
+.cat-gida {
+  background: linear-gradient(160deg, #fff8e1, #fff);
+  border-color: #ffe082;
+}
+.cat-gida h3 { color: #f57c00; }
+
+.cat-temizlik {
+  background: linear-gradient(160deg, #e3f2fd, #fff);
+  border-color: #90caf9;
+}
+.cat-temizlik h3 { color: #1565c0; }
+
+.cat-yasam {
+  background: linear-gradient(160deg, #f3e5f5, #fff);
+  border-color: #ce93d8;
+}
+.cat-yasam h3 { color: #7b1fa2; }
+
+.cat-su {
+  background: linear-gradient(160deg, #e0f7fa, #fff);
+  border-color: #80deea;
+}
+.cat-su h3 { color: #00838f; }
 
 /* Contact */
 dt {
@@ -282,14 +320,14 @@ a:hover {
 
 @media (max-width: 480px) {
   .header h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .btn {
     width: 100%;
     text-align: center;
   }
   .cat-card {
-    flex: 0 0 230px;
+    flex: 0 0 240px;
   }
   .order-section {
     padding: 20px 14px;
