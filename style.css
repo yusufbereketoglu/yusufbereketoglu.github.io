@@ -437,3 +437,13 @@ a:hover {
     font-size: 0.92rem;
   }
 }
+
+.footer-nap {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+}
+.footer-nap a {
+  color: #c8102e;
+}
