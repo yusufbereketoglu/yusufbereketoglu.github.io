@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bereket Market | Defne Hatay Market – Sipariş, Eve Teslimat, Taze Ürünler</title>
   <meta name="description" content="Bereket Market Defne Hatay – Dursunlu Mahallesi. Günlük taze meyve sebze, bakliyat, temizlik, damacana su. 500 TL üzeri ücretsiz eve teslimat. Sipariş WhatsApp: 0551 956 25 53">
-  <link rel="stylesheet" href="style.css">
   <link rel="canonical" href="https://bereketmarket.net/">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="assets/logo.svg" as="image">
+  <link rel="stylesheet" href="style.css">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="TR-31">
   <meta name="geo.placename" content="Defne, Hatay">
@@ -43,9 +45,7 @@
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-      ],
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
       "opens": "07:00",
       "closes": "23:00"
     },
@@ -58,7 +58,7 @@
 
   <header class="header">
     <div class="container header-inner">
-      <img src="assets/logo.png" alt="Bereket Market Logo" class="logo" width="120" height="118">
+      <img src="assets/logo.svg" alt="Bereket Market Logo" class="logo" width="110" height="110" fetchpriority="high" decoding="async">
       <h1>BEREKET MARKET</h1>
       <p class="tagline">Cebinizdeki Bereket · Defne, Hatay</p>
     </div>
@@ -70,12 +70,8 @@
       <h2>Hemen Sipariş Ver</h2>
       <p class="order-info">Sipariş & WhatsApp: <strong>0551 956 25 53</strong></p>
       <div class="btn-group">
-        <a href="https://wa.me/905519562553?text=Merhaba%2C%20sipari%C5%9F%20vermek%20istiyorum." class="btn btn-whatsapp" target="_blank" rel="noopener">
-          WhatsApp ile Sipariş
-        </a>
-        <a href="tel:+905519562553" class="btn btn-call">
-          Telefon ile Ara
-        </a>
+        <a href="https://wa.me/905519562553?text=Merhaba%2C%20sipari%C5%9F%20vermek%20istiyorum." class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp ile Sipariş</a>
+        <a href="tel:+905519562553" class="btn btn-call">Telefon ile Ara</a>
       </div>
     </section>
 
@@ -103,185 +99,60 @@
     <section id="kategoriler">
       <h2>Ürün Gruplarımız</h2>
       <p class="carousel-hint">Otomatik kaydırılıyor →</p>
-
       <div class="carousel">
         <div class="carousel-track">
-
-          <article class="cat-card cat-taze">
-            <div class="cat-visual">🥬🍅🧀</div>
-            <h3>Taze & Günlük Reyonumuz</h3>
-            <ul>
-              <li>Günlük Meyve - Sebze</li>
-              <li>Günlük Şarküteri ve Süt ürünleri</li>
-              <li>Günlük tavuk Çeşitleri</li>
-              <li>Günlük Çerez & Anlık çekim Türk Kahvesi</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-gida">
-            <div class="cat-visual">🌾🍫🍦</div>
-            <h3>Temel Gıda & Bakliyat</h3>
-            <ul>
-              <li>Bakliyat Ürünleri</li>
-              <li>Her türlü Gıda Çeşitleri</li>
-              <li>Atıştırmalıklar & çikolatalar</li>
-              <li>Tatlı Çeşitleri</li>
-              <li>Dondurulmuş gıdalar & Dondurma</li>
-              <li>Abur cubur Çeşitleri</li>
-              <li>Meşrubat İçecek Çeşitleri</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-temizlik">
-            <div class="cat-visual">🧴🧼👶</div>
-            <h3>Temizlik & Kişisel</h3>
-            <ul>
-              <li>Bakım Ürünleri</li>
-              <li>Bebek Bezi</li>
-              <li>Hijyen Ürünleri</li>
-              <li>Kişisel bakım ürünleri</li>
-              <li>Temizlik Malzemeleri</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-yasam">
-            <div class="cat-visual">🧹✏️📦</div>
-            <h3>Günlük Yaşam Ürünleri</h3>
-            <ul>
-              <li>Temel kırtasiye ürünleri</li>
-              <li>Bez mop, paspas, süpürge</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-su">
-            <div class="cat-visual">💧🧴🚰</div>
-            <h3>Koli Su & Damacana</h3>
-            <ul>
-              <li>0.5 L koli su (Erikli, Bahçepınar)</li>
-              <li>1.5 L koli su (Erikli, Bahçepınar)</li>
-              <li>5 L koli su (Erikli, Bahçepınar)</li>
-              <li>Çamlıbel 19 L Damacana</li>
-              <li>Hayat Su 19 L Damacana</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-taze">
-            <div class="cat-visual">🥬🍅🧀</div>
-            <h3>Taze & Günlük Reyonumuz</h3>
-            <ul>
-              <li>Günlük Meyve - Sebze</li>
-              <li>Günlük Şarküteri ve Süt ürünleri</li>
-              <li>Günlük tavuk Çeşitleri</li>
-              <li>Günlük Çerez & Anlık çekim Türk Kahvesi</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-gida">
-            <div class="cat-visual">🌾🍫🍦</div>
-            <h3>Temel Gıda & Bakliyat</h3>
-            <ul>
-              <li>Bakliyat Ürünleri</li>
-              <li>Her türlü Gıda Çeşitleri</li>
-              <li>Atıştırmalıklar & çikolatalar</li>
-              <li>Tatlı Çeşitleri</li>
-              <li>Dondurulmuş gıdalar & Dondurma</li>
-              <li>Abur cubur Çeşitleri</li>
-              <li>Meşrubat İçecek Çeşitleri</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-temizlik">
-            <div class="cat-visual">🧴🧼👶</div>
-            <h3>Temizlik & Kişisel</h3>
-            <ul>
-              <li>Bakım Ürünleri</li>
-              <li>Bebek Bezi</li>
-              <li>Hijyen Ürünleri</li>
-              <li>Kişisel bakım ürünleri</li>
-              <li>Temizlik Malzemeleri</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-yasam">
-            <div class="cat-visual">🧹✏️📦</div>
-            <h3>Günlük Yaşam Ürünleri</h3>
-            <ul>
-              <li>Temel kırtasiye ürünleri</li>
-              <li>Bez mop, paspas, süpürge</li>
-            </ul>
-          </article>
-
-          <article class="cat-card cat-su">
-            <div class="cat-visual">💧🧴🚰</div>
-            <h3>Koli Su & Damacana</h3>
-            <ul>
-              <li>0.5 L koli su (Erikli, Bahçepınar)</li>
-              <li>1.5 L koli su (Erikli, Bahçepınar)</li>
-              <li>5 L koli su (Erikli, Bahçepınar)</li>
-              <li>Çamlıbel 19 L Damacana</li>
-              <li>Hayat Su 19 L Damacana</li>
-            </ul>
-          </article>
-
+          <article class="cat-card cat-taze"><div class="cat-visual" aria-hidden="true">🥬🍅🧀</div><h3>Taze & Günlük Reyonumuz</h3><ul><li>Günlük Meyve - Sebze</li><li>Günlük Şarküteri ve Süt ürünleri</li><li>Günlük tavuk Çeşitleri</li><li>Günlük Çerez & Anlık çekim Türk Kahvesi</li></ul></article>
+          <article class="cat-card cat-gida"><div class="cat-visual" aria-hidden="true">🌾🍫🍦</div><h3>Temel Gıda & Bakliyat</h3><ul><li>Bakliyat Ürünleri</li><li>Her türlü Gıda Çeşitleri</li><li>Atıştırmalıklar & çikolatalar</li><li>Tatlı Çeşitleri</li><li>Dondurulmuş gıdalar & Dondurma</li><li>Abur cubur Çeşitleri</li><li>Meşrubat İçecek Çeşitleri</li></ul></article>
+          <article class="cat-card cat-temizlik"><div class="cat-visual" aria-hidden="true">🧴🧼👶</div><h3>Temizlik & Kişisel</h3><ul><li>Bakım Ürünleri</li><li>Bebek Bezi</li><li>Hijyen Ürünleri</li><li>Kişisel bakım ürünleri</li><li>Temizlik Malzemeleri</li></ul></article>
+          <article class="cat-card cat-yasam"><div class="cat-visual" aria-hidden="true">🧹✏️📦</div><h3>Günlük Yaşam Ürünleri</h3><ul><li>Temel kırtasiye ürünleri</li><li>Bez mop, paspas, süpürge</li></ul></article>
+          <article class="cat-card cat-su"><div class="cat-visual" aria-hidden="true">💧🧴🚰</div><h3>Koli Su & Damacana</h3><ul><li>0.5 L koli su (Erikli, Bahçepınar)</li><li>1.5 L koli su (Erikli, Bahçepınar)</li><li>5 L koli su (Erikli, Bahçepınar)</li><li>Çamlıbel 19 L Damacana</li><li>Hayat Su 19 L Damacana</li></ul></article>
+          <article class="cat-card cat-taze"><div class="cat-visual" aria-hidden="true">🥬🍅🧀</div><h3>Taze & Günlük Reyonumuz</h3><ul><li>Günlük Meyve - Sebze</li><li>Günlük Şarküteri ve Süt ürünleri</li><li>Günlük tavuk Çeşitleri</li><li>Günlük Çerez & Anlık çekim Türk Kahvesi</li></ul></article>
+          <article class="cat-card cat-gida"><div class="cat-visual" aria-hidden="true">🌾🍫🍦</div><h3>Temel Gıda & Bakliyat</h3><ul><li>Bakliyat Ürünleri</li><li>Her türlü Gıda Çeşitleri</li><li>Atıştırmalıklar & çikolatalar</li><li>Tatlı Çeşitleri</li><li>Dondurulmuş gıdalar & Dondurma</li><li>Abur cubur Çeşitleri</li><li>Meşrubat İçecek Çeşitleri</li></ul></article>
+          <article class="cat-card cat-temizlik"><div class="cat-visual" aria-hidden="true">🧴🧼👶</div><h3>Temizlik & Kişisel</h3><ul><li>Bakım Ürünleri</li><li>Bebek Bezi</li><li>Hijyen Ürünleri</li><li>Kişisel bakım ürünleri</li><li>Temizlik Malzemeleri</li></ul></article>
+          <article class="cat-card cat-yasam"><div class="cat-visual" aria-hidden="true">🧹✏️📦</div><h3>Günlük Yaşam Ürünleri</h3><ul><li>Temel kırtasiye ürünleri</li><li>Bez mop, paspas, süpürge</li></ul></article>
+          <article class="cat-card cat-su"><div class="cat-visual" aria-hidden="true">💧🧴🚰</div><h3>Koli Su & Damacana</h3><ul><li>0.5 L koli su (Erikli, Bahçepınar)</li><li>1.5 L koli su (Erikli, Bahçepınar)</li><li>5 L koli su (Erikli, Bahçepınar)</li><li>Çamlıbel 19 L Damacana</li><li>Hayat Su 19 L Damacana</li></ul></article>
         </div>
       </div>
     </section>
 
     <section id="hakkimizda">
       <h2>Hakkımızda</h2>
-      <p>
-        Bereket Market (Bereket Süpermarket Tekel), Hatay’ın Defne ilçesi Dursunlu Mahallesi’nde hizmet vermektedir.
-        Günlük taze ürünler, temel gıda, temizlik ve damacana su ihtiyaçlarınız için bizi arayabilir veya WhatsApp’tan sipariş verebilirsiniz.
-      </p>
+      <p>Bereket Market (Bereket Süpermarket Tekel), Hatay’ın Defne ilçesi Dursunlu Mahallesi’nde hizmet vermektedir. Günlük taze ürünler, temel gıda, temizlik ve damacana su ihtiyaçlarınız için bizi arayabilir veya WhatsApp’tan sipariş verebilirsiniz.</p>
     </section>
 
     <section id="iletisim">
       <h2>İletişim & Adres</h2>
-
       <div class="contact-icons">
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Bereket+Market+Dursunlu+Mahallesi+1812.+Sokak+Defne+Hatay" class="icon-btn icon-maps" target="_blank" rel="noopener" title="Google Haritalar">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Bereket+Market+Dursunlu+Mahallesi+1812.+Sokak+Defne+Hatay" class="icon-btn icon-maps" target="_blank" rel="noopener" title="Google Haritalar" aria-label="Google Haritalar'da aç">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           <span>Konum</span>
         </a>
-
-        <a href="tel:+905519562553" class="icon-btn icon-phone" title="Sipariş Telefonu">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <a href="tel:+905519562553" class="icon-btn icon-phone" title="Sipariş Telefonu" aria-label="Sipariş telefonunu ara">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           <span>Sipariş</span>
         </a>
-
-        <a href="https://wa.me/905519562553" class="icon-btn icon-whatsapp" target="_blank" rel="noopener" title="WhatsApp">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <a href="https://wa.me/905519562553" class="icon-btn icon-whatsapp" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp ile yaz">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           <span>WhatsApp</span>
         </a>
-
-        <a href="mailto:Yusuf@bereketmarket.net" class="icon-btn icon-mail" title="E-posta">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <a href="mailto:Yusuf@bereketmarket.net" class="icon-btn icon-mail" title="E-posta" aria-label="E-posta gönder">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           <span>E-posta</span>
         </a>
-
-        <a href="tel:+905519547053" class="icon-btn icon-sikayet" title="Şikayet & Öneri">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        <a href="tel:+905519547053" class="icon-btn icon-sikayet" title="Şikayet & Öneri" aria-label="Şikayet ve öneri hattını ara">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
           <span>Şikayet</span>
         </a>
       </div>
-
       <dl class="contact-details">
         <dt>İşletme Adı</dt>
         <dd>Bereket Market (Bereket Süpermarket Tekel)</dd>
-
         <dt>Adres</dt>
-        <dd>
-          Dursunlu Mahallesi, 1812. Sokak No: 2<br>
-          Yusuf Bereketoğlu Apartmanı<br>
-          31160 Defne / Hatay
-        </dd>
-
+        <dd>Dursunlu Mahallesi, 1812. Sokak No: 2<br>Yusuf Bereketoğlu Apartmanı<br>31160 Defne / Hatay</dd>
         <dt>Telefon / Sipariş</dt>
         <dd>0551 956 25 53</dd>
-
         <dt>Şikayet, Öneri & Sorular</dt>
         <dd>0551 954 70 53 · Yusuf@bereketmarket.net</dd>
-
         <dt>Çalışma Saatleri</dt>
         <dd>Her gün 07:00 – 23:00</dd>
       </dl>
@@ -291,10 +162,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer-nap">
-        <strong>Bereket Market</strong> · Dursunlu Mah. 1812. Sok. No:2, Defne/Hatay<br>
-        Tel: <a href="tel:+905519562553">0551 956 25 53</a> · WhatsApp & Sipariş
-      </p>
+      <p class="footer-nap"><strong>Bereket Market</strong> · Dursunlu Mah. 1812. Sok. No:2, Defne/Hatay<br>Tel: <a href="tel:+905519562553">0551 956 25 53</a> · WhatsApp & Sipariş</p>
       <p>&copy; 2026 Bereket Market. Tüm hakları saklıdır.</p>
     </div>
   </footer>
